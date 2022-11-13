@@ -1,0 +1,64 @@
+.refer-code > span {
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.refer .flex {
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: space-between; */
+  padding: 30px 20px;
+}
+.refer-code div {
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.refer-code div span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.wallet {
+  border-radius: 20px;
+  box-shadow: 0px 2px 8px rgba(128, 0, 128, 0.15);
+  padding: 20px;
+}
+
+.wallet .primary {
+  color: var(--primary);
+  display: block;
+}
+
+/* back button */
+.back {
+  padding-left: 18px;
+}
+.back span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+@media only screen and (min-width: 400px) {
+  .refer .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .back {
+    display: none;
+  }
+}
