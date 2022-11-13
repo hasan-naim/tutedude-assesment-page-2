@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../Card/Card";
 import "./Enrolled.css";
 
 const data = [
@@ -52,25 +53,10 @@ function Enrolled() {
           Friends Who Enrolled <span> &#40;3&#41; </span>
         </h1>
 
-        <div className="card">
-          <div className="header">
-            <h4>{data[0].name}</h4>
-            <span className="date">{data[0].date}</span>
-          </div>
-          <div className="enrolled">
-            <span className="enroll-course">
-              Courses Enrolled&#40;{data[0].enrolled}&#41;
-            </span>
-          </div>
-          <div className="courses-container">
-            {data[0].courses.map((course, i) => (
-              <span key={i}>{course}</span>
-            ))}
-          </div>
-          <div className="amount">
-            <span>Referral Amount </span>
-            <span className="num">₹{data[0].amount}</span>
-          </div>
+        <div className="flex">
+          {data.map((obj) => (
+            <Card data={obj} key={obj.id} />
+          ))}
         </div>
       </div>
     </section>
