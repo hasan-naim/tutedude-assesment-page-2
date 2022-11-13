@@ -1,0 +1,63 @@
+.enroll .title {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.enroll .title span {
+  color: rgb(157, 157, 157);
+}
+
+.card {
+  background: linear-gradient(270deg, #800080 0%, #ff864c 100%);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 358px;
+  color: white;
+}
+.card .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card .header h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card .header span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.card .enrolled {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.card .courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.card .courses-container span {
+  border: 1px solid rgb(243, 243, 243);
+  padding: 3px 12px;
+  border-radius: 30px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.card .amount {
+  font-weight: 300;
+  font-size: 16px;
+}
+.card .amount .num {
+  font-weight: 600;
+  font-size: 24px;
+}
